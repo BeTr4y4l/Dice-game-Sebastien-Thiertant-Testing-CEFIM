@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jeu de dé" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="containerTitle">
+        <h1 class="title">Jeu de dé</h1>
+        <h1 class="challenge">Peux-tu battre la machine ?</h1>
+    </div>
+    <div class="containerMid">
+        <div class="containerRules">
+            <h2 class="howPlay">Comment jouer ?</h2>
+            <h3 class="rules">
+                Il faut triompher de la machine, en devinant sur quelle face le dé tombera une fois lancé. Il te faudra tout d'abord : le lancer, sans savoir de quel côté il tombera. Saisit ensuite ta suggestion dans la fenêtre située juste en dessous. Sois attentif
+                ! Je te dirais si ta suggestion est supérieure ou inférieure à la face du dé, mais je te recommande de faire preuve de logique pour maximiser tes chances de faire de bons résultats ! Bonne chance !
+            </h3>
+        </div>
+        <div class="containerDice">
+            <h1 class="launch"></h1>
+            <button class="buttonDice">
+          <div class="dice1"></div>
+          <div class="dice2"></div>
+          <div class="dice3"></div>
+          <div class="dice4"></div>
+          <div class="dice5"></div>
+        </button>
+            <div class="containerResults">
+                <div class="games"></div>
+                <div class="tries"></div>
+                <div class="record"></div>
+            </div>
+        </div>
+    </div>
+    <div class="containerGuess">
+        <h1 class="displayPlayer"></h1>
+        <div class="guessingAnswer">
+            <input id="guessInput" class="input" type="number" name="guess" maxlength="1" min="1" max="6" step="1" value="1" />
+        </div>
+        <button class="submit" onclick="compare()">Tente ta chance</button>
+    </div>
+    <script src="script.js" async></script>
+</body>
+
+</html>
